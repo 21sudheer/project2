@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>logout page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>paccore</h1>
+    {% block content %}{% endblock content %}
+    {% if emp.is_authenticated %}
+        <p>your logged in as {{request.emp}}. <a href="{% http://127.0.0.1:8000/logout/%}">logout</a></p>
+    {% endif %}
+</body>
+</html>>
