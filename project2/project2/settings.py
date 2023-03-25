@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'risers',
+    'AUTH_USER_MODEL = ''risers.MyUser''',
 ]
 
 MIDDLEWARE = [
